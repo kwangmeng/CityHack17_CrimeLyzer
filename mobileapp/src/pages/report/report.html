@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<div #map id="map" ></div>
+<div padding>
+  <h3>Current Latitude: {{locationTracker.lat}}</h3>
+  <h3>Current Longitude: {{locationTracker.lng}}</h3>
+  </div>
+<ion-grid padding>
+  <ion-row>
+    <ion-col>
+<button ion-button (tap)="start()" color="danger" block full class="help">SOS</button>
+</ion-col>
+  <ion-col>
+<button ion-button (tap)="stop()" color="danger" block full class="help"> Stop SOS</button>
+    </ion-col>
+</ion-row>
+ <ion-row>
+  <ion-col>
+<button ion-button (tap)="initiateInfo()" color="danger" block full class="help">Criminal Records</button>
+  </ion-col>
+ </ion-row>
+</ion-grid>
+</ion-content>
